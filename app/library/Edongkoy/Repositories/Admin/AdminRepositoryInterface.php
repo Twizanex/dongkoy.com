@@ -1,0 +1,51 @@
+<?php namespace Edongkoy\Repositories\Admin;
+
+# app/library/Edongkoy/Repositories/Admin/Models/AdminRepositoriesInterface.php
+
+interface AdminRepositoryInterface {
+	public function countries();
+	public function countriesPaginate($per_page);
+	public function compileCountries();
+	public function categories();
+	public function compileCategories();
+	public function addCategory();
+	public function addCountries();
+	public function activeUsers();
+	public function unconfirmedUsers();
+	public function blockedUsers();
+	public function flaggedUsersByMembers();
+	public function flaggedUsersByNonMembers();
+	public function deactivatedUsers();
+	public function deletedUsers();
+	public function activePages();
+	public function unconfirmedPages();
+	public function disapprovedPages();
+	public function blockedPages();
+	public function flaggedPagesByMembers();
+	public function flaggedPagesByNonMembers();
+	public function deactivatedPages();
+	public function deletedPages();
+	public function deleteCategory();
+	public function deleteSubCategory();
+	public function deleteCountry();
+	public function deleteProvince();
+	public function deleteCity();
+	public function managePages();
+	public function manageMembers();
+	public function totalPages();
+	public function totalMembers();
+	public function factual();
+	public function bestbuyapi();
+	public function getFactualCategories();
+	public function getYoutube();
+	public function getIframeYoutube();
+	public function totalYoutube();
+	public function totalIframeYoutube();
+	public function updateIframeVideo();
+	public function pagesWithGoogleAds();
+	public function updatePageGoogleAds();
+	public function updateVideosFacebookShares();
+	public function bloggerAutoPost();
+	public function parseHtml();
+	public function factualGenerateExcel();
+}
